@@ -1,6 +1,7 @@
-#define NUMBER 20 
+#define NUMBER 30 
+const int LED_PIN = 13;
 
-char input[NUMBER];   // 文字列格納 PICのメモリの制限から20文字
+char input;
 int i = 0;  // 文字数のカウンタ
 
 void setup() {
@@ -10,16 +11,14 @@ void setup() {
 }
 
 void loop() {
-  if(Serial.available()>0){
-    input[i] = Serial.read();
-    // 20文字以上なら一旦出力する
-    if (i > NUMBER - 1) {
-      input[i+1] = '\0';
-      Serial.write(input);
-      Serial.write("\n");
-      i = 0;
-    } else { 
-      i++; 
-    }
- }
+    Serial.println("1");
+    delay(1000);
+    Serial.println("2");
+    delay(800);
+    Serial.println("3");
+    delay(600);
+    Serial.println("4");
+    delay(400);
+    Serial.println("5");
+    delay(200);
 }
