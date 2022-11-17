@@ -1,4 +1,4 @@
-# SerialPCToArduinoToPic
+# SerialPICToArduinoToPC
 
 ### 機能
 タクトスイッチを押すことで、PCからさまざまな音声が流すことができます。
