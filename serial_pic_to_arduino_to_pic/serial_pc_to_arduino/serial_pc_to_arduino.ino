@@ -11,14 +11,8 @@ void setup() {
 }
 
 void loop() {
-    Serial.println("1");
-    delay(1000);
-    Serial.println("2");
-    delay(800);
-    Serial.println("3");
-    delay(600);
-    Serial.println("4");
-    delay(400);
-    Serial.println("5");
-    delay(200);
+    if(Serial.available() > 0) {
+      input = Serial.read();
+      Serial.println(input);
+    }
 }
